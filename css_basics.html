@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS - basics</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!-- CSS -->
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <h1 id="Begining"><u>CSS Basics Structure</u></h1>
+        <p><strong>Cascading Style Sheets (CSS)</strong> is in escense what gives style to html files. CSS can thought of as the "adjective" of html. </p>
+        
+        <div class="jumbotron">
+        <p>CSS is structured in the standard format as follows:</p>
+        <code>
+            * {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;all_property_1: value;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;all_property_2: value;<br>
+            }<br>
+            element_selector {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;element_property_1: value;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;element_property_2: value;<br>
+            }<br>
+            .class_selector {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;class_property_1: value;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;class_property_2: value;<br>
+            }<br>
+            #id_selector {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;id_property_1: value;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;id_property_2: value;<br>
+            }<br>
+            ancestor_element decendant_element {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;decendant_property_1: value;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;decendant_property_2: value;<br>
+            }<br>
+            element adjacents {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;adjacents_property_1: value;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;adjacents_property_2: value;<br>
+            }<br>
+            element[attribute='xyz_attribute'] {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;attribute_property_1: value;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;attribute_property_2: value;<br>
+            }<br>
+            element:nth-of-type(n) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;nth-of-type(n)_property_1: value;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;nth-of-type(n)_property_2: value;<br>
+            }<br>
+        </code>
+        <p><br>Following we will look more into some properties. You can also check <a href='https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048'>Here.</a></p>
+        </div>
+        
+        <h2><u>color property</u></h2>
+        <div>
+            <ul>
+                <li><strong>named-color values</strong>
+                    <ul>
+                        <li>color: red;</li>
+                        <li>color: orange;</li>
+                        <li>color: tan;</li>
+                        <li>color: rebeccapurple;</li>
+                    </ul>
+                </li>
+                <li><strong>hex-color values</strong>
+                    <ul>
+                        <li>color: #090;</li>
+                        <li>color: #009900;</li>
+                        <li>color: #090a;</li>
+                        <li>color: #009900aa;</li>
+                    </ul>
+                </li>
+                <li><strong>rgb() values</strong>
+                    <ul>
+                        <li>color: rgb(34, 12, 64, 0.6);</li>
+                        <li>color: rgba(34, 12, 64, 0.6);</li>
+                        <li>color: rgb(34 12 64 / 0.6);</li>
+                        <li>color: rgba(34 12 64 / 0.6);</li>
+                        <li>color: rgb(34 12 64 / 60%);</li>
+                        <li>color: rgba(34 12 64 / 60%);</li>
+                    </ul>
+                </li>
+                <li><strong>hsl() values</strong>
+                    <ul>
+                        <li>color: hsl(30, 100%, 50%, 0.6);</li>
+                        <li>color: hsla(30, 100%, 50%, 0.6);</li>
+                        <li>color: hsl(30 100% 50% / 0.6);</li>
+                        <li>color: hsla(30 100% 50% / 0.6);</li>
+                        <li>color: hsl(30.0 100% 50% / 60%);</li>
+                        <li>color: hsla(30.0 100% 50% / 60%);</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </body>
+
+    <footer>
+    </footer>
+
+</html>
