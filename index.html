@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML - basics</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!-- CSS -->
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        
+        <!-- ------------------------ -->
+        <!-- ------------------------ -->
+        <!-- HTML Fundation Structure -->
+        <!-- -----------------------  -->
+        <!-- ------------------------ -->
+        <h1 id="Begining"><u>HTML Basic Structure</u></h1>
+        <p>Every HTML file is made up building blocks called <strong>tags</strong>, its corresponding <strong>attributes</strong>, and the enclosed <strong>data</strong>. It is important to know that some tags are <strong>block-level</strong> elements. This means that they have their own 'box' or 'line'. In contrast, <strong>in-line</strong> elements don't have their own 'box' or 'line', but they share the line among other in-line elements.</p>
+        <img src="imgs/element_anatomy.png" alt="Anatomy of an HTML element" height="150" width="400">
+        
+        
+        <div class="jumbotron">
+        <p>These building blocks are orginized in the standard format as follows:</p>
+        <code>
+                &lt;!DOCTYPE html&gt;
+                <br>&lt;html&gt;<br>
+                    <br>&nbsp; &nbsp; &lt;head&gt;
+                    <br>&nbsp; &nbsp; &nbsp; &lt;title&gt; &lt;/title&gt;
+                    <br>&nbsp; &nbsp; &lt;/head&gt;<br>
+                    <br>&nbsp; &nbsp; &lt;body&gt;
+                    <br>&nbsp; &nbsp; &lt;/body&gt;<br>
+                    <br>&nbsp; &nbsp; &lt;footer&gt;
+                    <br>&nbsp; &nbsp; &lt;/footer&gt;<br>
+                <br>&lt;/html&gt;
+        </code>
+        <p><br>Following we will look more into the most useful tags</p>
+        </div>
+        
+        <!-- ---------------- -->
+        <!-- ---------------- -->
+        <!-- Heading Elements -->
+        <!-- ________________ -->
+        <!-- ________________ -->
+        <h1><u>Headings Elements</u></h1>
+        <h1 class="headings"> This is a <code>&lt;h1&gt;</code> Heading </h1>
+        <h2 class="headings"> This is a <code>&lt;h2&gt;</code> Heading </h2>
+        <h3 class="headings"> This is a <code>&lt;h3&gt;</code> Heading </h3>
+        <h4 class="headings"> This is a <code>&lt;h4&gt;</code> Heading </h4>
+        <h5 class="headings"> This is a <code>&lt;h5&gt;</code> Heading </h5>
+        <h6 class="headings"> This is a <code>&lt;h6&gt;</code> Heading </h6>
+        <span style="font-size: 18px; margin: 21px 0;">This is a <code>&lt;span&gt;</code> element, and its size can be from 1px up to 50px or bigger. </span>
+        
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <!-- Paragraph Elements and Text Formats -->
+        <!-- ___________________________________ -->
+        <!-- ___________________________________ -->
+        <h1><u>Paragraphs and Formating Elements</u></h1>
+        <p> This is a paragraph, and<em> this sentence uses an emphasis <code>&lt;em&gt;</code> element nested, </em> <strong> while this one uses a strong emphasis <code>&lt;strong&gt;</code> element.</strong><i> This sentence uses an italic <code>&lt;i&gt;</code> element, </i> <b> this one a bold <code>&lt;b&gt;</code> element,</b> <u> and this last one uses an underline <code>&lt;u&gt;</code> element.</u>. We can also use superscripts <code>&lt;sup&gt;</code> and subscripts <code>&lt;sub&gt;</code>. For instance, my birthday is on the 4<sup>th</sup> of July. Did you know caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
+        
+        
+        <!-- --------------------- -->
+        <!-- --------------------- -->
+        <!-- Div and Span Elements -->
+        <!-- _____________________ -->
+        <!-- _____________________ -->
+        <h1><u>Div and Span Elements</u></h1>
+        <div>This entire parragraph is inside a <code>&lt;div&gt;</code> element. It is important to talk about <code>&lt;div&gt;</code> because they are useful for grouping and personalizing sections in HTML. <code>&lt;div&gt;</code> is a <strong>block-level</strong> element, and as described in the beginning, these have their own 'box'. <span> <u>Here</u> all the way to <u>here</u></span> was enclosed in a <code>&lt;span&gt;</code>. <code>&lt;span&gt;</code> are <strong>in-line</strong> elements, so they still get their own 'box', however, this 'box' is within the line only.</div> The neat feature about these elements is that these can be customed further using css and javascript. 
+        
+        
+        <!-- -------------- --> 
+        <!-- -------------- -->
+        <!-- Lists Elements -->
+        <!-- ______________ -->
+        <!-- ______________ -->
+        <h1><u>Lists Elements</u></h1>
+        <h6 id="list"> Unordered list  </h6>
+          <ul>
+            <li>hardworking,</li>
+            <li>motivated, and</li>
+            <li>experienced</li>
+          </ul>
+        <h6 id="list"> Oredered list </h6>
+          <ol>
+              <li>Drive to the end of the road</li>
+              <li>Turn right</li>
+              <li>Go straight across the first two roundabouts</li>
+              <li>Turn left at the third roundabout</li>
+              <li>The school is on your right, 300 meters up the road</li>
+          </ol>
+        <h6 id="list"> Description list </h6>
+          <dl>
+            <dt>soliloquy</dt>
+                <dd>In drama, where a character speaks to themselves, representing their inner thoughts or feelings and in the process relaying them to the audience (but not to other characters.)</dd>
+            <dt>monologue</dt>
+                <dd>In drama, where a character speaks their thoughts out loud to share them with the audience and any other characters present.</dd>
+            <dt>aside</dt>
+                <dd>In drama, where a character shares a comment only with the audience for humorous or dramatic effect. This is usually a feeling, thought or piece of additional background information.</dd>
+                <dd>In writing, a section of content that is related to the current topic, but doesn't fit directly into the main flow of content so is presented nearby (often in a box off to the side.)</dd>
+          </dl>
+        
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- Image Elements -->
+        <!-- ______________ -->
+        <!-- ______________ -->
+        <h1><u>Image Elements</u></h1>
+        <div> Image elements <code>&lt;img&gt;</code> are used for incorporating images. The most common and usefull attributes to personalize images are: <strong>src</strong>, <strong>title</strong>, <strong>alt</strong>, <strong>height</strong>, and <strong>width</strong>.</div>
+        <div><img src="imgs/mozilla_logo.png" alt="mozilla logo that links to the mozilla homepage" height="100" width="100" title="the Mozilla homepage"></div>
+        
+        
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <!-- Links Elements -->
+        <!-- ______________ -->
+        <!-- ______________ -->
+        <h1><u>Links Elements</u></h1>
+        <div> Ancher elemnts <code>&lt;a&gt;</code> are used for creating links. The most common attributes are <strong>href</strong>, <strong>title</strong>, and <strong>download</strong>.</div>
+        <div> Hihglited-text links with hover-title:
+            <a href="https://www.mozilla.org/en-US/" title="The best place to find more information about Mozilla's mission and how to contribute">
+                The Mozilla Homepage.
+            </a>
+        </div>
+        <div> Section-reference links using id's attributes:
+            <a href="#Begining" title="Fragment">HTML - basics</a>
+        </div>
+        <div> Links with download attributes:
+            <a href="imgs/mozilla_logo.png" download="mozilla_logo">
+                Download Mozilla Logo.
+            </a>
+        </div>
+        <div> Links using nested images <code>&lt;img&gt;</code> elements:
+            <a href="https://www.mozilla.org/en-US/"> 
+                <img src="imgs/mozilla_logo.png" alt="mozilla logo that links to the mozilla homepage" height="25" width="25" title="the Mozilla homepage">
+            </a>
+        </div>
+        <div> Links to emails:
+            <a href="mailto:nowhere@mozilla.org
+                     ?cc=name2@rapidtables.com
+                     &bcc=name3@rapidtables.com
+                     &amp;subject=The%20subject%20of%20the%20email
+                     &amp;body=The%20body%20of%20the%20email">
+            Send mail with cc, bcc, subject and body
+            </a>    
+        </div>
+        
+        
+        <!-- ------------------------ -->
+        <!-- ------------------------ -->
+        <!-- Citations and Quotations -->
+        <!-- ------------------------ -->
+        <!-- ------------------------ -->
+        <h1><u>Quotations and Citations</u></h1>
+        <p>There is a standard and proper way to citate and quote text in HTML. There is the <code>&lt;blockquote&gt;</code> along with <code>&lt;footer&gt;</code> and <code>&lt;cite&gt;</code> for block quotes. And we also have <code>&lt;q&gt;</code> for short quotations that don't require paragraph breaks.</p>
+        
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+            <footer>Aldous Huxley, <cite>Brave New World</cite></footer>
+        </blockquote>
+        
+        <p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>
+        
+        <!-- ---------------------- -->
+        <!-- ---------------------- -->
+        <!-- Abbreviations Elements -->
+        <!-- ______________________ -->
+        <!-- ______________________ -->
+        <h1><u>Abbreviations Elements</u></h1>
+        <p><code>&lt;abbr title=""&gt;</code> is a useful and neat element for abbreviations. To illustrate, <abbr title="Hypertext Markup Language">HTML</abbr> is an abbreviation some most don't know the meaning for, but it you hover your pointer over <abbr title="Hypertext Markup Language">HTML</abbr>, you will see what it stands for.
+        
+        <!-- ------------- -->
+        <!-- Date and Time -->
+        <!-- _____________ -->
+        <h3><u>Date and Time</u></h3>
+        <p> 
+            <!-- Standard simple date -->
+            <time datetime="2016-01-20">20 January 2016</time><br>
+            <!-- Just year and month -->
+            <time datetime="2016-01">January 2016</time><br>
+            <!-- Just month and day -->
+            <time datetime="01-20">20 January</time><br>
+            <!-- Just time, hours and minutes -->
+            <time datetime="19:30">19:30</time><br>
+            <!-- You can do seconds and milliseconds too! -->
+            <time datetime="19:30:01.856">19:30:01.856</time><br>
+            <!-- Date and time -->
+            <time datetime="2016-01-20T19:30">7:30pm, 20 January 2016</time><br>
+            <!-- Date and time with timezone offset-->
+            <time datetime="2016-01-20T19:30+01:00">7:30pm, 20 January 2016 is 8:30pm in France</time><br>
+            <!-- Calling out a specific week number-->
+            <time datetime="2016-W04">The fourth week of 2016</time> 
+        </p>
+        
+        
+        <!-- ------ -->
+        <!-- ------ -->
+        <!-- Tables -->
+        <!-- ______ -->
+        <!-- ______ -->
+        <h1><u>Tables</u></h1>  
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>A <code>&lt;table&gt;</code> element</th>
+                    <th>with <code>&lt;thead&gt;</code> to highlight a heading</th>
+                    <th><code>&lt;tbody&gt;</code> for the corresponding body</th>
+                </tr>
+            </thead>
+            <tbody>
+                <colgroup>
+                    <col span="2" style="background-color: #0f0">
+                    <col style="background-color: #FFFF00">
+                </colgroup>
+                <tr>
+                    <td>Lime</td>
+                    <td>Watermelon</td>
+                    <td>Banana</td>
+                </tr>
+                <tr>
+                    <td>Green</td>
+                    <td>Green</td>
+                    <td>Yellow</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><code>&lt;colgroup&gt;</code> to color columns</td>
+                    <td><code>&lt;tfoot&gt;</code> include footer notes</td>
+                    <td>and <code>&lt;caption&gt;</code></td>
+                </tr>
+            </tfoot>
+            <caption>For an Awesome caption</caption>
+        </table>
+        
+        <p id="tic-tac-toe">tic tac toe</p>
+        <table id="tic-table">
+            <tr>
+                <td class="tic-td" id="zz"></td>
+                <td class="tic-td" id="zo"></td>
+                <td class="tic-td" id="zt"></td>
+            </tr>        
+            <tr>
+                <td class="tic-td" id="oz"></td>
+                <td class="tic-td" id="oo"></td>
+                <td class="tic-td" id="ot"></td>
+            </tr>        
+            <tr>
+                <td class="tic-td" id="tz"></td>
+                <td class="tic-td" id="to"></td>
+                <td class="tic-td" id="tt"></td>
+            </tr>
+        </table>  
+        
+        
+        <!-- ----- -->
+        <!-- ----- -->    
+        <!-- Forms -->
+        <!-- _____ -->
+        <!-- _____ -->
+
+        <h1><u>Forms</u></h1>
+
+        <p><code>&lt;form action="" method=""&gt;</code> is a container with one or more <code>&lt;input&gt;</code> elements used for fetching desired information from users.</p>
+        <div>Forms with validations:
+            <form action"/my-form-submitting-page" method="post">
+                <input name="email" type="email" placeholder="email" required>
+                <input name="username" type="text" placeholder="username" required>
+                <input name="password" type="password" placeholder="password" required>
+                <input type="submit">
+            </form>
+        </div>
+        <div><br>Forms with nested labels:
+            <form>
+                <label>Email:<input type="email" placeholder="email"> </label>
+                <label>Username:<input type="text" placeholder="username"></label>
+                <label>Password:<input type="password" placeholder="password"></label>
+                <input type="submit">
+            </form>
+        </div>
+        <div><br>Forms with id labels: 
+            <form>
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="email">
+                <label for="username">Username:</label>
+                <input id="username" type="text" placeholder="username">
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="password">
+                <input type="submit">
+            </form>
+        </div>
+        <div><br>Forms for radios buttons. If name are the same for 2 or more, then only one can be selected!<br>Do you prefer cats or dogs?
+            <form>
+                <label for="dogs">Dogs:</label>
+                <input name="petChoice" id="dogs" type="radio" value="DOGS">
+                <label for="cats">Cats:</label>
+                <input name="petChoice" id="cats" type="radio" value="CATS">
+                <input type="submit">
+            </form>
+        </div>
+        <div><br>Forms for selects:<br>What is your favorite food?
+            <form>
+                <select name="food">
+                    <option value="null"> -- </option>
+                    <option value="none"> none </option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Hamburgers"> Hamburgers </option>
+                    <option value="Salads"> Salads </option>
+                    <option value="Pasta"> Pasta </option>
+                </select>
+                <input type="submit">
+            </form>
+        </div>
+        <div><br>Forms for text input:<br>Tell me a story
+            <form> 
+                <textarea name="story" rows="10" cols="50"> </textarea>
+                <button>Go!</button>
+            </form>
+        </div>
+        
+        
+        
+        
+        <!-- ----------------------------------- -->
+        <!-- ----------------------------------- -->
+        <!-- ------------  CSS  ---------------- -->
+        <!-- ___________________________________ -->
+        <!-- ___________________________________ -->
+        <h1 id="CSS"><u><a href="css_basics.html">CSS Basics</a></u></h1>
+        
+    </body>
+    
+    <footer>
+    </footer>
+    
+    
+</html>
