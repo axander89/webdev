@@ -48,9 +48,13 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;nth-of-type(n)_property_2: value;<br>
             }<br>
         </code>
-        <p><br>Following we will look more into some properties. You can also check <a href='https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048'>Here.</a></p>
+            
+        <p><br><strong>Note!</strong> You should be aware of <a href='https://specificity.keegan.st/'><strong>Specificity</strong></a>. Specificity refers to the <a href='https://www.w3.org/TR/selectors-3/#specificity'><u>priority</u></a> a CSS selector is given.<br> Following we will look more into some properties. You can also check <a href='https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048'>Here.</a></p>
         </div>
         
+        
+        
+        <h1><u>Properties</u></h1>
         <h2><u>color property</u></h2>
         <div>
             <ul>
@@ -92,7 +96,80 @@
                 </li>
             </ul>
         </div>
-
+        
+        
+        
+        <h2><u>fonts property</u></h2>
+        <div>
+            <ul>
+                <li><strong>OS built-in fonts</strong>
+                    <p>These fonts are built into your operating system. Some fonts might not be available in all OS. Check your <a href='https://www.cssfontstack.com/'>OS fonts.</a></p>
+                    <ul>
+                        <li>font-family: Arial;</li>
+                        <li>font-size: 14px;</li>
+                        <li>font-weight: bold;</li>
+                        <li>line-height: 1.5;</li>
+                        <li>text-align: right;</li>
+                        <li>text-decoration: underline;</li>
+                    </ul><br>
+                    <ul>
+                        <li>font-family: Georgia;</li>
+                        <li>font-size: 5.0em;</li>
+                        <li>font-weight: 300;</li>
+                        <li>line-height: 2.5;</li>
+                        <li>text-align: center;</li>
+                        <li>text-decoration: line-through;</li>
+                    </ul><br>
+                </li>
+                <li><strong>Google fonts</strong>
+                    <p>These are customed fonts referenced from  <a href='https://fonts.google.com/'>Google</a> to be used in your CSS style sheet by puting it into the <code>&lt;head&gt;</code> of the CSS project.</p>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <h2 id="CSS"><u>The Box Model</u></h2>
+        <p>This is a model in which every element in HTML is a box with four main elements: </p>
+        <div>
+            <ul>
+                <li>Content</li>
+                <li>Padding</li>
+                <li>Border</li>
+                <li>Margin</li>
+            </ul>
+        </div>
+        <div><img src="imgs/boxmodel.png" alt="The Box Model" title="The Box Model" height="100" width="250" >
+        </div>
+        <div>
+            <ul><br>
+                <li><strong>The Box Model</strong>
+                    <ul>
+                        <li>width: 200px;</li>
+                        <li>height: 100px;</li>
+                        <li>padding: 10px;</li>
+                        <li>border: 2px solid blue;</li>
+                        <li>margin: 100px;</li>
+                    </ul>
+                    <ul><br>
+                        <li>width: 50%;</li>
+                        <li>height: 100px;</li>
+                        <li>padding-left: 30px;</li>
+                        <li>border-top: 2px solid blue;</li>
+                        <li>margin-right: 25px;</li>
+                    </ul>
+                    <ul><br>
+                        <li>width: 200px;</li>
+                        <li>height: 100px;</li>
+                        <li>padding: 10px;</li>
+                        <li>border: 2px solid blue;</li>
+                        <li>margin: 20px auto 30px auto;</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        
+        
     </body>
 
     <footer>
